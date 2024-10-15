@@ -7,7 +7,7 @@ resource "aws_vpc" "tf-vpc" {
 
 resource "aws_subnet" "tf-web" {
   vpc_id = "${aws_vpc.tf-vpc.id}"
-  cidr_block = "172.21.0.0/24"
+  cidr_block = "172.21.0.0/23"
   availability_zone = "eu-west-1a"
   map_public_ip_on_launch = true
   tags {
